@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+<TextView
+    android:id="@+id/textview_title"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="20sp"
+    android:text="@string/app_name" />
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/textview_message"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="Wow, I'm a Custom Alert Dialog!"
+        android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Details..."/>
+
+            <TextView
+                android:id="@+id/hello2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="15"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:scrollbars="vertical"
+                android:text="Hello World!"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="Ok" />
+</LinearLayout>
+</LinearLayout>
