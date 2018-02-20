@@ -3,27 +3,26 @@
     android:orientation="vertical"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:paddingTop="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:padding="16dp">
 <TextView
     android:id="@+id/textview_title"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
+    android:includeFontPadding="false"
     android:textSize="20sp"
     android:text="@string/app_name" />
 <LinearLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="16dp">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textview_message"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="16dp"
         android:textSize="16sp"
+        android:includeFontPadding="false"
         android:text="Wow, I'm a Custom Alert Dialog!"
         android:layout_marginLeft="10dp" />
 
@@ -35,15 +34,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/hello"
+                android:id="@+id/show_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
-                android:text="Details..."/>
+                android:text="@string/details"/>
 
             <TextView
-                android:id="@+id/hello2"
+                android:id="@+id/details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="15"
@@ -52,17 +51,20 @@
                 android:scrollbars="vertical"
                 android:text="Hello World!"
                 android:visibility="gone"/>
-
+            
         </LinearLayout>
 
-    <Button
+    <TextView
         android:id="@+id/btn_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="16dp"
+        android:includeFontPadding="false"
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
-        android:background="@android:color/transparent"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:text="Ok" />
 </LinearLayout>
 </LinearLayout>

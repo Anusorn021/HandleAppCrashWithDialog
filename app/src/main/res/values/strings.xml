@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HandleAppCrash</string>
+    <string name="details"><u>Details...</u></string>
 </resources>
